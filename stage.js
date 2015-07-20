@@ -2,36 +2,24 @@
  * Set up some basics for getting the game loading 
  * TODO show a splash screen with progress
  */
-var game = null;
+var gameManager = null;
 
-/**
- * trace to console.log: easy to turn all off
- * use trace instead of console.log in game code
- */
-var trace = console.log.bind(console);
-
-/*
- * Approx size of a game background; 
- * overwritten when the real background loads.
- */
+// Approx size of a game background; overwritten when the real background loads.
 var gameWidth = 1136;
 var gameHeight = 640;
 
-/** Create a new instance of a pixi stage
-  * stage = new Stage(0x000000,true);  
-  * (Deprecated in V3: just delare a Container and bung everything in it)
-  * TODO also make one for a console?
-  */
+// Create a new instance of a pixi stage
 var stage = new PIXI.Container();
 
-// Get the current size of the window
-var size = getWindowBounds();
-
 // Create a renderer instance to fit window.
-var renderer = PIXI.autoDetectRenderer(size.x, size.y);
+var renderer = PIXI.autoDetectRenderer(getWindowBounds().x, getWindowBounds().y);
 
 // Add the renderer view element to the DOM
 document.body.appendChild(renderer.view);
+// Hide scrollbars firefox, chrome
+document.documentElement.style.overflow = 'hidden';  
+// Hide scrollbars IE only
+document.body.scroll = "no"; 
 
 /**
  * Window loaded: 
@@ -39,14 +27,11 @@ document.body.appendChild(renderer.view);
  * Start rendering.
  */ 
 document.addEventListener("DOMContentLoaded", function init(){
-  
   var gameLoader = new GameLoader();
-  Events.Dispatcher.addEventListener(Event.ASSETS_LOADED, onAssetsLoaded);
   gameLoader.loadAssets(onAssetsLoaded);
 
   // Start rendering
   requestAnimationFrame( animate );
-
 });
 
 /**
@@ -63,11 +48,11 @@ var globalTicker = PIXI.ticker.shared;
  * Start resizing. 
  */
 function onAssetsLoaded(){
-    game = new Game();
-    game.onAssetsLoaded();
+    gameManager = new GameManager();
+    gameManager.onAssetsLoaded();
     
-    gameWidth = game.gameBackground.getBounds().width;
-    gameHeight = game.gameBackground.getBounds().height;
+    gameWidth = gameManager.gameBackground.getBounds().width;
+    gameHeight = gameManager.gameBackground.getBounds().height;
     
     window.addEventListener('resize', onWindowResize);
     onWindowResize();
