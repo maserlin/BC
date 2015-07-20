@@ -1,0 +1,172 @@
+{"frames": [
+
+{
+	"filename": "cupcakes1.png",
+	"frame": {"x":0,"y":0,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes10.png",
+	"frame": {"x":105,"y":0,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes10b.png",
+	"frame": {"x":210,"y":0,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes1b.png",
+	"frame": {"x":315,"y":0,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes2.png",
+	"frame": {"x":420,"y":0,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes2b.png",
+	"frame": {"x":0,"y":122,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes3.png",
+	"frame": {"x":105,"y":122,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes3b.png",
+	"frame": {"x":210,"y":122,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes4.png",
+	"frame": {"x":315,"y":122,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes4b.png",
+	"frame": {"x":420,"y":122,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes5.png",
+	"frame": {"x":0,"y":244,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes5b.png",
+	"frame": {"x":105,"y":244,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes6.png",
+	"frame": {"x":210,"y":244,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes6b.png",
+	"frame": {"x":315,"y":244,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes7.png",
+	"frame": {"x":420,"y":244,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes7b.png",
+	"frame": {"x":0,"y":366,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes8.png",
+	"frame": {"x":105,"y":366,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes8b.png",
+	"frame": {"x":210,"y":366,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes9.png",
+	"frame": {"x":315,"y":366,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+},
+{
+	"filename": "cupcakes9b.png",
+	"frame": {"x":420,"y":366,"w":105,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
+	"sourceSize": {"w":105,"h":122}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "cupcakes.png",
+	"format": "RGBA8888",
+	"size": {"w":525,"h":488},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9247536b31811adece5de57639d48240$"
+}
+}
