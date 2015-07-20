@@ -17,9 +17,9 @@ var renderer = PIXI.autoDetectRenderer(getWindowBounds().x, getWindowBounds().y)
 // Add the renderer view element to the DOM
 document.body.appendChild(renderer.view);
 // Hide scrollbars firefox, chrome
-document.documentElement.style.overflow = 'hidden';  
+//document.documentElement.style.overflow = 'hidden';  
 // Hide scrollbars IE only
-document.body.scroll = "no"; 
+//document.body.scroll = "no"; 
 
 /**
  * Window loaded: 
@@ -118,11 +118,13 @@ function Point(x, y){
 /**
  * UTILS: Create Rectangle class
  */ 
-function Rectangle(x,y,w,h){
+function Rectangle(x,y,w,h,lineStyle,fillStyle){
     this.x = x;
     this.y = y;
     this.width = w;
     this.height = h;
+    this.lineStyle = lineStyle || 'black';
+    this.fillStyle = fillStyle || 'transparent';
 };
 
 /**
