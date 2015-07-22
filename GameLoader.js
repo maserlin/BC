@@ -11,7 +11,11 @@ GameLoader.prototype.constructor = GameLoader;
  * @param {Object} callback
  */
 GameLoader.prototype.loadAssets = function(callback){
-    var assets = ["assets/bgDay.jpg","assets/bgNight.jpg","assets/cupcakes.json","assets/sun_moon.json"];
+    var assets = [  "assets/bgDay.jpg",
+                    "assets/bgNight.jpg",
+                    "assets/cupcakes.json",
+                    "assets/sun_moon.json"];
+                    
     console.log("GameLoader load:", assets);
     this.add(assets);
     this.once('complete', callback);

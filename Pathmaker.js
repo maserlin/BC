@@ -187,6 +187,179 @@ M_ElasticOut.prototype.interpolateForward = function(t) {
     var result = 0+1*(this.e*tc*ts + this.d*ts*ts + this.c*tc + this.b*ts + this.a*t);
     return result;
 }
+Bounce.easeOut = function  ( intT, intB, intC, intD )
+{
+    if ((intT /= intD) < (1 / 2.75))
+    {
+        return intC * (7.5625 * intT * intT) + intB;
+    }   
+    else if (intT < (2 / 2.75))
+    {
+        return intC * (7.5625 * (intT -= (1.5 / 2.75)) * intT + 0.75) + intB;
+    }   
+    else if (intT < (2.5 / 2.75))
+    {
+        return intC * (7.5625 * (intT -= (2.25 / 2.75)) * intT + 0.9375) + intB;
+    }
+    else
+    {
+        return intC * (7.5625 * (intT -= (2.625 / 2.75)) * intT + 0.984375) + intB;
+    }
+}
+Bounce.easeIn = function  ( intT, intB,intC, intD )
+{
+    return intC - this.easeOut(intD - intT, 0, intC, intD) + intB;
+}
+Bounce.easeInOut = function  ( intT, intB,intC, intD )
+{
+    if (intT < intD/2)
+    {
+        return this.easeIn(intT * 2, 0, intC, intD) * 0.5 + intB;
+    }
+    else
+    {
+        return this.easeOut(intT * 2 - intD, 0, intC, intD) * 0.5 + intC * 0.5 + intB;
+    }
+}
+Bounce.easeInOut2 = function (t, b, c, d, s )
+{
+    if (s == null)
+        s = 1.70158; 
+    
+    if ((t /= d / 2) < 1)
+    {
+        return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+    }
+    
+    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+}
+    
+Bounce.easeOut2 = function  ( intT, intB,intC, intD )
+{
+    return - intC * ( intT /= intD ) * ( intT - 2) + intB ;
+}
+
+// time, start, end, duration
+Linear.easeIn = function (t, b, c, d)
+{
+    return c * t / d + b;
+}
+
+Linear.easeOut = function (t, b, c, d)
+{
+    return c * t / d + b;
+}
+Linear.easeInOut = function (t, b,c, d)
+{
+    return c * t / d + b;
+}
+/**
+ * @author Petr Urban
+ * 
+ * Interpolation functions (easing)
+ * - all these functions have the same parameters, therefore one can be changed for another 
+ */
+
+/**
+ * Linear interpolation
+ *  
+ * @param {number} intDuration - total duration of animation
+ * @param {number} intCurrentTime - current time (0 - intDuration)
+ * @param {number} intStartValue - starting value
+ * @param {number} intValueChange - change in value
+ */
+Interpolator = {};
+Interpolator.linear = function(intCurrentTime, intDuration, intStartValue, intValueChange)
+{
+    if (intCurrentTime > intDuration)
+    {
+        intCurrentTime = intDuration; 
+    }
+    
+    if ( intDuration == 0 )
+    {
+        return  (intStartValue + intValueChange);
+    }
+    
+    return intStartValue + (intValueChange * (intCurrentTime / intDuration));
+}
+
+/**
+ * QuadraticIn interpolation - starts slow, ends fast
+ *  
+ * @param {number} intDuration - total duration of animation
+ * @param {number} intCurrentTime - current time (0 - intDuration)
+ * @param {number} intStartValue - starting value
+ * @param {number} intValueChange - change in value
+ */
+Interpolator.quadraticIn = function (intDuration, intCurrentTime, intStartValue, intValueChange) {
+    if (intCurrentTime > intDuration)
+    {
+        intCurrentTime = intDuration; 
+    }
+    intCurrentTime = intCurrentTime / intDuration;
+    return intStartValue + (intValueChange * intCurrentTime * intCurrentTime);
+};
+
+/**
+ * QuadraticOut interpolation - starts fast, ends slow
+ *  
+ * @param {number} intDuration - total duration of animation
+ * @param {number} intCurrentTime - current time (0 - intDuration)
+ * @param {number} intStartValue - starting value
+ * @param {number} intValueChange - change in value
+ */
+Interpolator.quadraticOut = function (intDuration, intCurrentTime, intStartValue, intValueChange) {
+    if (intCurrentTime > intDuration)
+    {
+        intCurrentTime = intDuration; 
+    }
+    intCurrentTime = intCurrentTime / intDuration;
+    return intStartValue + (-intValueChange * intCurrentTime * (intCurrentTime-2));
+};
+
+/**
+ * QuadraticInOut interpolation - slow - fast - slow
+ *  
+ * @param {number} intDuration - total duration of animation
+ * @param {number} intCurrentTime - current time (0 - intDuration)
+ * @param {number} intStartValue - starting value
+ * @param {number} intValueChange - change in value
+ */
+Interpolator.quadraticInOut = function (intDuration, intCurrentTime, intStartValue, intValueChange) {
+    if (intCurrentTime > intDuration)
+    {
+        intCurrentTime = intDuration; 
+    }
+    intCurrentTime = intCurrentTime / (intDuration / 2);
+    
+    if (intCurrentTime < 1) {
+        return intStartValue + (intValueChange / 2 * intCurrentTime * intCurrentTime);
+    }
+    intCurrentTime--;
+    return intStartValue + (-intValueChange / 2 * ( intCurrentTime * (intCurrentTime - 2) - 1));
+};
+
+/**
+ * constant interpolation returns original position all the time until current time is eqeal or greater that given number
+ * can be used as delay or for animating
+ *  
+ * @param {number} intDuration - total duration of animation
+ * @param {number} intCurrentTime - current time (0 - intDuration)
+ * @param {number} intStartValue - starting value
+ * @param {number} intValueChange - change in value
+ */
+Interpolator.constant = function(intDuration, intCurrentTime, intStartValue, intValueChange)
+{
+    if (intCurrentTime >= intDuration)
+    {
+        return intStartValue;
+    }
+    else
+    {
+        return intStartValue + intValueChange;
+    }
+}
 
 function TestQuintBezier(){
 /*

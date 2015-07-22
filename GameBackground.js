@@ -1,7 +1,7 @@
 console.log("GameBackground loaded");
 function GameBackground( bgJpgs ){
     PIXI.Container.call(this);
-    
+    this.interactive = true;
     // Create a background Sprite from each jpg image
     this.backgrounds = [];
     for( var bg in bgJpgs ){
