@@ -1,165 +1,165 @@
-{"frames": [
+{"frames": {
 
+"cupcakes1.png":
 {
-	"filename": "cupcakes1.png",
 	"frame": {"x":0,"y":0,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes10.png":
 {
-	"filename": "cupcakes10.png",
 	"frame": {"x":105,"y":0,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes10b.png":
 {
-	"filename": "cupcakes10b.png",
 	"frame": {"x":210,"y":0,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes1b.png":
 {
-	"filename": "cupcakes1b.png",
 	"frame": {"x":315,"y":0,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes2.png":
 {
-	"filename": "cupcakes2.png",
 	"frame": {"x":420,"y":0,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes2b.png":
 {
-	"filename": "cupcakes2b.png",
 	"frame": {"x":0,"y":122,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes3.png":
 {
-	"filename": "cupcakes3.png",
 	"frame": {"x":105,"y":122,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes3b.png":
 {
-	"filename": "cupcakes3b.png",
 	"frame": {"x":210,"y":122,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes4.png":
 {
-	"filename": "cupcakes4.png",
 	"frame": {"x":315,"y":122,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes4b.png":
 {
-	"filename": "cupcakes4b.png",
 	"frame": {"x":420,"y":122,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes5.png":
 {
-	"filename": "cupcakes5.png",
 	"frame": {"x":0,"y":244,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes5b.png":
 {
-	"filename": "cupcakes5b.png",
 	"frame": {"x":105,"y":244,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes6.png":
 {
-	"filename": "cupcakes6.png",
 	"frame": {"x":210,"y":244,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes6b.png":
 {
-	"filename": "cupcakes6b.png",
 	"frame": {"x":315,"y":244,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes7.png":
 {
-	"filename": "cupcakes7.png",
 	"frame": {"x":420,"y":244,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes7b.png":
 {
-	"filename": "cupcakes7b.png",
 	"frame": {"x":0,"y":366,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes8.png":
 {
-	"filename": "cupcakes8.png",
 	"frame": {"x":105,"y":366,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes8b.png":
 {
-	"filename": "cupcakes8b.png",
 	"frame": {"x":210,"y":366,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes9.png":
 {
-	"filename": "cupcakes9.png",
 	"frame": {"x":315,"y":366,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
 },
+"cupcakes9b.png":
 {
-	"filename": "cupcakes9b.png",
 	"frame": {"x":420,"y":366,"w":105,"h":122},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":122},
 	"sourceSize": {"w":105,"h":122}
-}],
+}},
 "meta": {
 	"app": "http://www.texturepacker.com",
 	"version": "1.0",
@@ -167,6 +167,6 @@
 	"format": "RGBA8888",
 	"size": {"w":525,"h":488},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:9247536b31811adece5de57639d48240$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8fb914825826fdf70d11fb9ad490c8b9$"
 }
 }
